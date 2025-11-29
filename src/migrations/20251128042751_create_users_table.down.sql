@@ -1,3 +1,1 @@
-CREATE table users(
-    
-)
+DROP TABLE users;
