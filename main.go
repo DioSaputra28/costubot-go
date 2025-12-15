@@ -45,6 +45,10 @@ func main() {
 	router.PUT("/users/:username", middlewares.AuthMiddleware(userController.UpdateUser))
 	router.DELETE("/users/:username", middlewares.AuthMiddleware(userController.DeleteUser))
 
+	categoryRepo := repositories.NewCategoryRepository(db)
+	_ = services.NewCategoryService(categoryRepo)
+	// _ := controllers.
+
 	port := ":8000"
 	logger.Info("Server running on port " + port)
 	logger.Fatal(http.ListenAndServe(port, router))
