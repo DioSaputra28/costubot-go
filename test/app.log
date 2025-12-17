@@ -1,0 +1,108 @@
+time="2025-12-17T10:33:17+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:33:17+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a210}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:33:18+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc0000607b8}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a248}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a648}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc0001145e0}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc0000600d8}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a008}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a130}"
+time="2025-12-17T10:33:18+07:00" level=info msg="Ini adalah service dari memory&{0xc000060420}"
+time="2025-12-17T10:37:32+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:37:32+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c228}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:37:33+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc000248098}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc000060530}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc00011e0d8}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc000060470}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc000248158}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc0000604f0}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c3f0}"
+time="2025-12-17T10:37:33+07:00" level=info msg="Ini adalah service dari memory&{0xc000060608}"
+time="2025-12-17T10:39:33+07:00" level=info msg="Ini adalah service dari memory&{0xc00020e008}"
+time="2025-12-17T10:39:33+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:39:43+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:39:43+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a4b8}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:39:44+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c7b0}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc000060128}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a218}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a018}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc000060050}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc0004883a8}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a240}"
+time="2025-12-17T10:39:44+07:00" level=info msg="Ini adalah service dari memory&{0xc000060250}"
+time="2025-12-17T10:40:00+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:40:00+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:40:00+07:00" level=info msg="Ini adalah service dari memory&{0xc00012a0b8}"
+time="2025-12-17T10:40:00+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:40:00+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:40:00+07:00" level=info msg="Ini adalah service dari memory&{0xc000060560}"
+time="2025-12-17T10:40:00+07:00" level=info msg="Ini adalah service dari memory&{0xc000060460}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc00011e4b0}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc0000608b0}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc00012a008}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc00012a258}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc00012a2f8}"
+time="2025-12-17T10:40:01+07:00" level=info msg="Ini adalah service dari memory&{0xc00012a618}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0003060e0}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0000603b8}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0003060a0}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0000602e0}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0003ea020}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc000060048}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc0003ea110}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc00019c778}"
+time="2025-12-17T10:40:51+07:00" level=info msg="Ini adalah service dari memory&{0xc00019c3f8}"
+time="2025-12-17T10:42:02+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:42:02+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc0000600f0}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:42:03+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc00028e340}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc000348038}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc000060008}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c650}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c6f8}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c788}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc000348418}"
+time="2025-12-17T10:42:03+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c680}"
+time="2025-12-17T10:42:16+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:42:40+07:00" level=info msg="Success response" message="Username atau password salah" status=401
+time="2025-12-17T10:42:40+07:00" level=info msg="Success response" message="Gagal login" status=500
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc000060190}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:42:41+07:00" level=info msg="Success response" message="Gagal membuat brand product" status=500
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a610}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a0a8}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Success response" message="Gagal memperbarui brand product" status=500
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a440}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c6e8}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00028a010}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc00011c638}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Success response" message="Gagal mendapatkan data kategori" status=500
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc0000600b0}"
+time="2025-12-17T10:42:41+07:00" level=info msg="Ini adalah service dari memory&{0xc000060028}"

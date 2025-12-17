@@ -46,10 +46,26 @@ func main() {
 	router.DELETE("/users/:username", middlewares.AuthMiddleware(userController.DeleteUser))
 
 	categoryRepo := repositories.NewCategoryRepository(db)
-	_ = services.NewCategoryService(categoryRepo)
-	// _ := controllers.
+	categoryService := services.NewCategoryService(categoryRepo)
+	categoryController := controllers.NewCategoryController(categoryService)
 
-	port := ":8000"
+	router.GET("/categories", middlewares.AuthMiddleware(categoryController.GetAllCategories))
+	router.POST("/categories", middlewares.AuthMiddleware(categoryController.CreateCategory))
+	router.GET("/categories/:id", middlewares.AuthMiddleware(categoryController.GetCategoryByID))
+	router.PUT("/categories/:id", middlewares.AuthMiddleware(categoryController.UpdateCategory))
+	router.DELETE("/categories/:id", middlewares.AuthMiddleware(categoryController.DeleteCategory))
+	
+	brandProductRepo := repositories.NewBrandProductRepository(db)
+	brandProductService := services.NewBrandProductService(brandProductRepo)
+	brandProductController := controllers.NewBrandProductController(brandProductService)
+
+	router.GET("/brand-products", middlewares.AuthMiddleware(brandProductController.GetAllBrandProducts))
+	router.POST("/brand-products", middlewares.AuthMiddleware(brandProductController.CreateBrandProduct))
+	router.GET("/brand-products/:id", middlewares.AuthMiddleware(brandProductController.GetBrandProductByID))
+	router.PUT("/brand-products/:id", middlewares.AuthMiddleware(brandProductController.UpdateBrandProduct))
+	router.DELETE("/brand-products/:id", middlewares.AuthMiddleware(brandProductController.DeleteBrandProduct))
+
+	port := ":8080"
 	logger.Info("Server running on port " + port)
 	logger.Fatal(http.ListenAndServe(port, router))
 }

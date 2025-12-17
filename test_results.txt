@@ -1,0 +1,170 @@
+=== RUN   TestRegister
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+=== RUN   TestRegister/Success_-_Register_new_user
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+=== RUN   TestRegister/Error_-_Duplicate_username
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+=== RUN   TestRegister/Error_-_Missing_required_fields
+    auth_test.go:85: Expected status code 400, got 422
+--- FAIL: TestRegister (0.22s)
+    --- PASS: TestRegister/Success_-_Register_new_user (0.10s)
+    --- PASS: TestRegister/Error_-_Duplicate_username (0.12s)
+    --- FAIL: TestRegister/Error_-_Missing_required_fields (0.00s)
+=== RUN   TestLogin
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+=== RUN   TestLogin/Success_-_Login_with_valid_credentials
+=== RUN   TestLogin/Error_-_Invalid_password
+=== RUN   TestLogin/Error_-_Non-existent_user
+    auth_test.go:142: Expected status code 401, got 500
+=== RUN   TestLogin/Error_-_Missing_credentials
+    auth_test.go:155: Expected status code 400, got 422
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+--- FAIL: TestLogin (0.31s)
+    --- PASS: TestLogin/Success_-_Login_with_valid_credentials (0.10s)
+    --- PASS: TestLogin/Error_-_Invalid_password (0.10s)
+    --- FAIL: TestLogin/Error_-_Non-existent_user (0.00s)
+    --- FAIL: TestLogin/Error_-_Missing_credentials (0.00s)
+=== RUN   TestMe
+2025/12/17 10:33:17 Warning: .env file not found, using environment variables
+=== RUN   TestMe/Success_-_Get_current_user_with_valid_token
+=== RUN   TestMe/Error_-_Missing_token
+=== RUN   TestMe/Error_-_Invalid_token
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestMe (0.13s)
+    --- PASS: TestMe/Success_-_Get_current_user_with_valid_token (0.00s)
+    --- PASS: TestMe/Error_-_Missing_token (0.00s)
+    --- PASS: TestMe/Error_-_Invalid_token (0.00s)
+=== RUN   TestLogout
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestLogout/Success_-_Logout_with_valid_token
+=== RUN   TestLogout/Error_-_Logout_without_token
+=== RUN   TestLogout/Error_-_Logout_with_invalid_token
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestLogout (0.16s)
+    --- PASS: TestLogout/Success_-_Logout_with_valid_token (0.04s)
+    --- PASS: TestLogout/Error_-_Logout_without_token (0.00s)
+    --- PASS: TestLogout/Error_-_Logout_with_invalid_token (0.00s)
+=== RUN   TestGetAllBrandProducts
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestGetAllBrandProducts/Success_-_Get_all_brand_products
+=== RUN   TestGetAllBrandProducts/Error_-_Unauthorized_without_token
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestGetAllBrandProducts (0.01s)
+    --- PASS: TestGetAllBrandProducts/Success_-_Get_all_brand_products (0.00s)
+    --- PASS: TestGetAllBrandProducts/Error_-_Unauthorized_without_token (0.00s)
+=== RUN   TestCreateBrandProduct
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestCreateBrandProduct/Success_-_Create_new_brand_product
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestCreateBrandProduct/Error_-_Invalid_category_id
+=== RUN   TestCreateBrandProduct/Error_-_Missing_required_fields
+    brand_products_test.go:128: Expected status code 400, got 500
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- FAIL: TestCreateBrandProduct (0.04s)
+    --- PASS: TestCreateBrandProduct/Success_-_Create_new_brand_product (0.01s)
+    --- PASS: TestCreateBrandProduct/Error_-_Invalid_category_id (0.00s)
+    --- FAIL: TestCreateBrandProduct/Error_-_Missing_required_fields (0.00s)
+=== RUN   TestGetBrandProductByID
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestGetBrandProductByID/Success_-_Get_brand_product_by_ID
+=== RUN   TestGetBrandProductByID/Error_-_Brand_product_not_found
+=== RUN   TestGetBrandProductByID/Error_-_Invalid_ID_format
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestGetBrandProductByID (0.04s)
+    --- PASS: TestGetBrandProductByID/Success_-_Get_brand_product_by_ID (0.00s)
+    --- PASS: TestGetBrandProductByID/Error_-_Brand_product_not_found (0.00s)
+    --- PASS: TestGetBrandProductByID/Error_-_Invalid_ID_format (0.00s)
+=== RUN   TestUpdateBrandProduct
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestUpdateBrandProduct/Success_-_Update_brand_product
+=== RUN   TestUpdateBrandProduct/Error_-_Update_non-existent_brand_product
+=== RUN   TestUpdateBrandProduct/Error_-_Invalid_category_id
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestUpdateBrandProduct (0.11s)
+    --- PASS: TestUpdateBrandProduct/Success_-_Update_brand_product (0.01s)
+    --- PASS: TestUpdateBrandProduct/Error_-_Update_non-existent_brand_product (0.00s)
+    --- PASS: TestUpdateBrandProduct/Error_-_Invalid_category_id (0.00s)
+=== RUN   TestDeleteBrandProduct
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestDeleteBrandProduct/Success_-_Delete_brand_product
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestDeleteBrandProduct/Error_-_Delete_non-existent_brand_product
+=== RUN   TestDeleteBrandProduct/Error_-_Unauthorized
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestDeleteBrandProduct (0.05s)
+    --- PASS: TestDeleteBrandProduct/Success_-_Delete_brand_product (0.03s)
+    --- PASS: TestDeleteBrandProduct/Error_-_Delete_non-existent_brand_product (0.00s)
+    --- PASS: TestDeleteBrandProduct/Error_-_Unauthorized (0.00s)
+=== RUN   TestGetAllCategories
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestGetAllCategories/Success_-_Get_all_categories
+=== RUN   TestGetAllCategories/Error_-_Unauthorized_without_token
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- PASS: TestGetAllCategories (0.01s)
+    --- PASS: TestGetAllCategories/Success_-_Get_all_categories (0.00s)
+    --- PASS: TestGetAllCategories/Error_-_Unauthorized_without_token (0.00s)
+=== RUN   TestCreateCategory
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestCreateCategory/Success_-_Create_new_category
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestCreateCategory/Error_-_Missing_name_field
+    category_test.go:90: Expected status code 400, got 201
+    category_test.go:91: Expected status error, got success
+=== RUN   TestCreateCategory/Error_-_Unauthorized
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- FAIL: TestCreateCategory (0.04s)
+    --- PASS: TestCreateCategory/Success_-_Create_new_category (0.02s)
+    --- FAIL: TestCreateCategory/Error_-_Missing_name_field (0.01s)
+    --- PASS: TestCreateCategory/Error_-_Unauthorized (0.00s)
+=== RUN   TestGetCategoryByID
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestGetCategoryByID/Success_-_Get_category_by_ID
+    category_test.go:128: Expected status code 200, got 400
+    category_test.go:129: Expected status success, got error
+=== RUN   TestGetCategoryByID/Error_-_Category_not_found
+    category_test.go:136: Expected status code 404, got 500
+=== RUN   TestGetCategoryByID/Error_-_Invalid_ID_format
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- FAIL: TestGetCategoryByID (0.02s)
+    --- FAIL: TestGetCategoryByID/Success_-_Get_category_by_ID (0.00s)
+    --- FAIL: TestGetCategoryByID/Error_-_Category_not_found (0.00s)
+    --- PASS: TestGetCategoryByID/Error_-_Invalid_ID_format (0.00s)
+=== RUN   TestUpdateCategory
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestUpdateCategory/Success_-_Update_category
+    category_test.go:174: Expected status code 200, got 400
+    category_test.go:175: Expected status success, got error
+=== RUN   TestUpdateCategory/Error_-_Update_non-existent_category
+=== RUN   TestUpdateCategory/Error_-_Missing_name_field
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- FAIL: TestUpdateCategory (0.03s)
+    --- FAIL: TestUpdateCategory/Success_-_Update_category (0.00s)
+    --- PASS: TestUpdateCategory/Error_-_Update_non-existent_category (0.00s)
+    --- PASS: TestUpdateCategory/Error_-_Missing_name_field (0.00s)
+=== RUN   TestDeleteCategory
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestDeleteCategory/Success_-_Delete_category
+    category_test.go:221: Failed to parse response: invalid character 'p' after top-level value, body: 404 page not found
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+=== RUN   TestDeleteCategory/Error_-_Delete_non-existent_category
+=== RUN   TestDeleteCategory/Error_-_Unauthorized
+2025/12/17 10:33:18 Warning: .env file not found, using environment variables
+--- FAIL: TestDeleteCategory (0.02s)
+    --- FAIL: TestDeleteCategory/Success_-_Delete_category (0.01s)
+    --- PASS: TestDeleteCategory/Error_-_Delete_non-existent_category (0.00s)
+    --- PASS: TestDeleteCategory/Error_-_Unauthorized (0.00s)
+FAIL
+FAIL	contact-management/test	1.197s
+FAIL

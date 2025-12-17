@@ -20,12 +20,12 @@ type CategoryRepository interface {
 	CreateCategory(category *models.Category) error
 	GetAllCategories() ([]*models.Category, error)
 	GetCategoryByID(id int) (*models.Category, error)
-	UpdateCategory(category *models.Category) error
+	UpdateCategory(category *models.Category, id int) error
 	DeleteCategory(id int) error
 }
 
 func (cr *categoryRepository) CreateCategory(category *models.Category) error {
-	result, err := cr.db.Exec("INSERT INTO categories (name) VALUES ($1)", category.Name)
+	result, err := cr.db.Exec("INSERT INTO category (name) VALUES (?)", category.Name)
 	if err != nil {
 		return err
 	}
@@ -38,16 +38,21 @@ func (cr *categoryRepository) CreateCategory(category *models.Category) error {
 }
 
 func (cr *categoryRepository) GetAllCategories() ([]*models.Category, error) {
-	rows, err := cr.db.Query("SELECT * FROM categories WHERE deleted_at IS NULL")
+	rows, err := cr.db.Query("SELECT category_id, name, created_at, updated_at, deleted_at FROM category WHERE deleted_at IS NULL")
 	if err != nil {
 		return nil, err
 	}
+	defer rows.Close()
 
 	var categories []*models.Category
 	for rows.Next() {
 		category := &models.Category{}
-		if err := rows.Scan(&category.CategoryID, &category.Name); err != nil {
+		var deletedAt sql.NullTime
+		if err := rows.Scan(&category.CategoryID, &category.Name, &category.CreatedAt, &category.UpdatedAt, &deletedAt); err != nil {
 			return nil, err
+		}
+		if deletedAt.Valid {
+			category.DeletedAt = &deletedAt.Time
 		}
 		categories = append(categories, category)
 	}
@@ -56,16 +61,20 @@ func (cr *categoryRepository) GetAllCategories() ([]*models.Category, error) {
 }
 
 func (cr *categoryRepository) GetCategoryByID(id int) (*models.Category, error) {
-	row := cr.db.QueryRow("SELECT * FROM categories WHERE category_id = $1 AND deleted_at IS NULL", id)
+	row := cr.db.QueryRow("SELECT category_id, name, created_at, updated_at, deleted_at FROM category WHERE category_id = ? AND deleted_at IS NULL", id)
 	category := &models.Category{}
-	if err := row.Scan(&category.CategoryID, &category.Name); err != nil {
+	var deletedAt sql.NullTime
+	if err := row.Scan(&category.CategoryID, &category.Name, &category.CreatedAt, &category.UpdatedAt, &deletedAt); err != nil {
 		return nil, err
+	}
+	if deletedAt.Valid {
+		category.DeletedAt = &deletedAt.Time
 	}
 	return category, nil
 }
 
-func (cr *categoryRepository) UpdateCategory(category *models.Category) error {
-	row, err := cr.db.Exec("UPDATE categories SET name = $2 WHERE category_id = $1 AND deleted_at IS NULL", category.CategoryID, category.Name)
+func (cr *categoryRepository) UpdateCategory(category *models.Category, id int) error {
+	row, err := cr.db.Exec("UPDATE category SET name = ? WHERE category_id = ? AND deleted_at IS NULL", category.Name, id)
 	if err != nil {
 		return err
 	}
@@ -82,7 +91,7 @@ func (cr *categoryRepository) UpdateCategory(category *models.Category) error {
 }
 
 func (cr *categoryRepository) DeleteCategory(id int) error {
-	row, err := cr.db.Exec("UPDATE categories SET deleted_at = NOW() WHERE category_id = $1 AND deleted_at IS NULL", id)
+	row, err := cr.db.Exec("UPDATE category SET deleted_at = NOW() WHERE category_id = ? AND deleted_at IS NULL", id)
 	if err != nil {
 		return err
 	}

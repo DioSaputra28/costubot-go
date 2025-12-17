@@ -11,11 +11,16 @@ import (
 
 func AuthMiddleware(next httprouter.Handle) httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-		
-		token := r.Header.Get("Authorization")
-		if token == "" {
+
+		authHeader := r.Header.Get("Authorization")
+		if authHeader == "" {
 			helpers.UnauthorizedResponse(w, "Unauthorized")
 			return
+		}
+
+		token := authHeader
+		if len(authHeader) > 7 && authHeader[:7] == "Bearer " {
+			token = authHeader[7:]
 		}
 
 		username, err := utils.VerifyToken(token)

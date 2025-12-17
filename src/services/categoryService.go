@@ -39,8 +39,14 @@ func (cs *CategoryService) CreateCategory(category *models.Category) error {
 	return cs.categoryRepo.CreateCategory(category)
 }
 
-func (cs *CategoryService) UpdateCategory(category *models.Category) error {
-	return cs.categoryRepo.UpdateCategory(category)
+func (cs *CategoryService) UpdateCategory(category *models.Category, id int) error {
+	validate := helpers.InitValidator()
+
+	err := validate.Struct(category)
+	if err != nil {
+		return err
+	}
+	return cs.categoryRepo.UpdateCategory(category, id)
 }
 
 func (cs *CategoryService) DeleteCategory(id int) error {
